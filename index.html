@@ -6,21 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hamberger menu</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
 
-    <button id="btn" class="btn">clic</button>
-    
+    <div id="btn" class="btn">
+        <div class="menu-bar"></div>
+    </div>
+
 
     <div id="side" class="side-menu">
         <h2>lorem</h2>
+
         <ul class="menu">
-            <li><a href="#">lorem</a></li>
-            <li><a href="#">lorem</a></li>
-            <li><a href="#">lorem</a></li>
-            <li><a href="#">lorem</a></li>
+            <li><i class='bx bx-home-alt'></i><a href="#">Home</a></li>
+            <li><i class='bx bx-clipboard'></i><a href="#">Clipboard</a></li>
+            <li><i class='bx bxs-edit-alt'></i><a href="#">Edite</a></li>
+            <li><i class='bx bxs-report'></i><a href="#">Report</a></li>
+            <li><i class='bx bxl-mastodon'></i><a href="#">Masseage</a></li>
         </ul>
+
+        <div class="bottom">
+            <hr>
+            <div class="log">
+                <i class='bx bx-log-out'></i>
+            <a href="#">Log Out</a>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
