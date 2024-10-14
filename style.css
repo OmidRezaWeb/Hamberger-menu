@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: rgb(207, 207, 207);
   color: white;
   font-size: 1rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -15,7 +15,7 @@ a {
   text-decoration: none;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
@@ -32,46 +32,51 @@ ul{
   width: 30px;
 }
 
-.menu-bar{
+.menu-bar {
   width: 30px;
   height: 3px;
-  background-color:rgb(70, 70, 70) ;
+  background-color:#3A1078;
   z-index: 20;
   position: absolute;
   top: 12px;
+  border-radius: 100px;
 }
 
-.menu-bar::after ,.menu-bar::before {
-content: '';
-width: 20px;
-height: 3px;
-background-color:rgb(70, 70, 70) ;
-position: absolute;
+.menu-bar::after,
+.menu-bar::before {
+  content: '';
+  width: 20px;
+  height: 3px;
+  background-color: #3A1078;
+  position: absolute;
+  border-radius: 100px;
+
 }
 
-.menu-bar::after{
+.menu-bar::after {
   bottom: -10px;
 }
 
-.menu-bar::before{
+.menu-bar::before {
   top: -10px;
 }
 
 h2 {
-  color: black;
+  color: #3A1078;
   font-size: 2rem;
 }
 
 .side-menu {
   width: 200px;
   height: 100vh;
-  background-color: aliceblue;
+  background-color: #dbdbdb;
   position: fixed;
   left: 0;
   padding: 20px 15px;
   transform: translateX(-100%);
   transition: .5s all ease;
   position: relative;
+  box-shadow: 4px 0px 10px 3px rgba(0, 0, 0, 0.027);
 }
 
 .menu {
@@ -85,45 +90,56 @@ h2 {
   font-weight: 700;
 }
 
+.menu li {
+  margin: 5px 0;
+}
+
+.menu li a {
+  cursor: pointer;
+  color: #3A1078;
+}
+
 .side-menu.active {
   transform: translateX(0%);
 }
 
-#btn.active{
+#btn.active {
   transform: translateX(130px);
 }
 
-.menu a{
-  color: black;
+.menu a {
   margin-left: 30px;
 }
 
-.menu i{
-  color:black ;
+.menu i {
+  color: #3A1078;
 }
 
-.bottom{
+.bottom {
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   right: 0;
   width: 100%;
+  height: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #3A1078;
 }
 
-.log{
+.log {
   display: flex;
   justify-content: center;
 }
 
-.side-menu .log > i{
-  color: black;
-  font-size: 1.3rem;
+.side-menu .log>i {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
   margin-right: 10px;
+  padding-top: 5px;
 }
 
-.bottom hr{
-  width: 100%;
-  margin-bottom: 20px;
+.bottom .log a {
+  color: white;
+  font-size: 1.3rem;
 }
